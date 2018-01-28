@@ -1,0 +1,354 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+
+Theme Name: JasonSobottka 2017
+Author: Tyler Savin
+Description: Theme design and coded by Tyler Savin
+Version: 1
+License: @copy; 2017 Tyler Savin
+Tags: Bootstrap,custom,frontpage,minimal,jquery,easing,navigation
+Text Domain: tylersavin2017
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*
+TABLE OF CONTENTS
+
+1.0 HEADER
+2.0 GALLERY
+3.0 POSTS
+
+COLORS
+
+DARK GRAY: rgba(102,102,102,1)
+PURPLE: rgba(126,15,132,1)
+
+FONTS
+font-family: Lato-Regular;
+font-family: Lato-Light;
+*/
+
+@font-face {
+    font-family: Oswald-Regular;
+    src: url(fonts/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato-Regular;
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato-Light;
+    src: url(fonts/Lato-Light.ttf);
+}
+
+body{
+	font-size:16px;
+	color: rgba(34,34,34,1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  text-rendering: optimizelegibility;
+  font-family: 'Lato', sans-serif;
+  font-family: Oswald-Regular;
+}
+
+h2{
+	color:#34495E;
+}
+
+h3{
+	color:#16A085;
+}
+
+a:active,a:focus{
+	background-color:transparent;
+}
+
+ul{
+	-webkit-padding-start:0;
+	padding-left:0px;
+}
+
+section{
+	padding:62px 0;
+}
+
+.clearfix:before,
+.clearfix:after{
+  	content: " ";
+  	display: table;
+}
+ 
+.clearfix:after{
+  	clear: both;
+}
+ 
+.clearfix{
+  	*zoom: 1;
+}
+
+/* 1.0 HEADER */
+
+.header-social ul{
+	float:right;
+}
+
+.header-social ul li{
+	display: inline-block;
+}
+
+.header-social ul li a{
+	color:rgba(126,15,132,1);
+}
+
+.header-social ul li a:hover{
+	color:rgba(126,15,132,.7);
+}
+
+header{
+	padding:25px 0px 40px;
+}
+
+.header-name img{
+	width:100%;
+	height:auto;
+}
+
+nav .menu{
+	padding-top:62px;
+}
+
+nav .menu li{
+	display:inline-block;
+	padding:0px 10px;
+}
+
+nav .menu li a{
+	padding:15px 5px 0px;
+	color:rgb(0, 0, 0);
+	font-family: Oswald-Regular;
+	text-transform: uppercase;
+	font-size:21px;
+}
+
+nav .menu li a:hover{
+	text-decoration: none;
+	border-bottom:3px solid rgb(0, 0, 0);
+	color:rgba(102,102,102,1);
+}
+
+.classes-link{
+	margin-top:20px;
+}
+
+.btn-primary{
+	background-color: #00FFCC;
+	color:#000;
+	border-radius: 0px;
+	border:0px solid #fff;
+}
+
+.btn-primary:hover{
+	background-color: #ccc;
+	opacity:.75;
+	color:#000;
+	border-radius: 0px;
+	border:0px solid #fff;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.navBtn{
+	display:none;
+}
+
+/* 2.0 GALLERY */
+
+.gallery-grid li{
+	text-align: center;
+	margin-bottom:30px;
+}
+
+.gallery-grid li img{
+	width:100%;
+	height:auto;
+}
+
+/* POSTS */
+
+.post-content{
+	margin-top:30px;
+}
+
+.post-title{
+	font-family: Oswald-Regular;
+	margin-top:15px;
+}
+
+.post-title a{
+	color:#000;
+}
+
+.post-title a:hover{
+	text-decoration: none;
+}
+
+.post-content img{
+	display:inline-block;
+	max-width:100%;
+	height:auto;
+}
+
+.post img.aligncenter{
+	width:86%;
+	height:auto;
+	margin:0 0 0 7%;
+	border:10px solid #ecf0f1;
+}
+
+.post-thumbnail-wrapper{
+	padding:10px;
+	background-color: #ecf0f1;
+}
+
+.post-thumbnail{
+	display:inline-block;
+	width:100%;
+}
+
+.post-thumbnail img{
+	width:100%;
+	height:auto;
+}
+
+.post-content{
+	font-family: Lato-Regular;
+}
+
+.post-content p{
+	margin:15px 0 0 0;
+	font-size:18px;
+	line-height:24px
+}
+
+.post-content h3{
+	color:#34495E;
+}
+
+.post-content ul{
+	margin-top:20px;
+}
+
+.post-content ul li{
+	list-style-type: disc;
+	margin-left:19px;
+}
+
+.results-desc{
+	margin-bottom:30px;
+}
+
+.content-main{
+	padding-right:25px;
+	border-right:1px solid #ccc;
+}
+
+/* 4.0 FOOTER */
+
+footer{
+	text-align: center;
+	padding:20px 0;
+	font-family: Lato-Regular;
+	font-size:13px;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+	padding:0px 15px 15px;
+}
+
+.sidebar h3{
+	letter-spacing: .025em;
+}
+
+.sidebar ul{
+	padding-bottom:10px;
+}
+
+.sidebar ul li{
+	margin-bottom:10px;
+}
+
+.sidebar ul li a{
+	color:#000;
+	text-decoration: none;
+	padding:7px 0px;
+}
+
+@media (max-width: 1200px){
+	nav .menu{
+		padding-top:20px;
+	}
+	
+	nav .menu li{
+		display:inline-block;
+		padding:0px 0px;
+	}
+	
+	nav .menu li a{
+		padding:15px 5px 0px;
+		color:rgb(0, 0, 0);
+		font-family: Oswald-Regular;
+		text-transform: uppercase;
+		font-size:18px;
+	}
+}
+
+@media (max-width: 768px){
+	nav .menu{
+		padding-top:20px;
+	}
+}
+
+@media (max-width: 640px){
+	.navBtn{
+		display:inline-block;
+		float:right;
+		padding:5px 10px 5px 10px;
+		margin-right:20px;
+		font-size:36px;
+	}
+
+	.navigation{
+		display:none;
+	}
+
+	.navigation.active{
+		display:block;
+	}
+
+	nav .menu li{
+		display:block;
+	}
+
+	nav .menu li a{
+		text-align: center;
+		padding:10px 0px 10px 0px;
+		display:block;
+	}
+
+	nav .menu li a:hover{
+		border-bottom:0px solid #fff;
+	}
+}
