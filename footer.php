@@ -19,10 +19,9 @@ $(document).ready(function(){
     });
 
     var lightbox = $('.gallery a').simpleLightbox({
-        captions: false;
+        captions: false
     });
 });
-
 </script>
 
 <?php wp_footer(); ?>

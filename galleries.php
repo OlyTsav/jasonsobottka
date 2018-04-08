@@ -1,11 +1,12 @@
 <?php
 /*
-Template Name: Frontpage
+Template Name: Galleries
 */
 ?>
 <?php get_header(); ?>
 <section id="work-grid">
     <div class="container">
+    <h1 class="post-title"><?php the_title(); ?></h1>
     <div class="row">
             <div class="gallery-grid">
 <?php $images = get_field('frontpage-gallery');
